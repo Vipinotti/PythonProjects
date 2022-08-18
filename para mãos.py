@@ -1,3 +1,4 @@
+# this is my only code commented on Portuguese because I had to translate it to present in college!!!
 import cv2
 import mediapipe as mp
 mp_drawing = mp.solutions.drawing_utils
@@ -57,8 +58,7 @@ with mp_hands.Hands(
       # para parar clique em "parar".
       continue
 
-    # To improve performance, optionally mark the image as not writeable to
-    # pass by reference.
+   # Para melhorar o desempenho, opcionalmente marque a imagem como não gravável para passar por referência
     image.flags.writeable = False
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     results = hands.process(image)
